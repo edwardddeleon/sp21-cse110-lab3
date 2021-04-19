@@ -1,0 +1,124 @@
+body {
+    background-color: blanchedalmond;
+    color: #080808; 
+}
+
+/* media query */
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: lavender;
+        color: #080808;
+    }
+}
+
+/* using 3 unique absolute units, colors, comments, margin, padding, blocks
+   display, text, margin, border, padding, position
+*/
+h3 {
+    position: relative;
+    left: 40px;
+    display: block;
+    text-decoration: underline;
+    text-align: left;
+
+    margin: auto;
+
+    border: 2px solid black;
+
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+    padding-left: 20pt;
+    padding-right: 20pt;
+}
+
+/* grid, child combinator */
+div > ol {
+    display: grid;
+}
+
+/* class selector */
+.grid-item {
+    background-color: white;
+    justify-self: start;
+    align-self: start;
+}
+
+/* flexbox, position, border, margin, padding, descendant selector */
+li ul {
+    display: flexbox;
+    flex-direction: row;
+    flex-grow: 1;
+
+    position: static;
+    margin: 2px;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+/* adjacent sibling combinator*/
+li + li {
+    background-color: white;
+}
+
+/* general sibling combinator */
+input ~ input {
+    padding: 2px;
+}
+
+/* margin (long), border (long), selector list, combine selector */
+.block,
+li {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 0;
+
+    padding: 1pc;
+}
+
+p {
+    border: 2px solid black;
+    padding: 1pc;
+}
+
+/* display */
+p.inlineblockp {
+    display: inline-block;
+}
+
+/* relative units, width/height */
+iframe.iframec {
+    width: 30%;
+    height: 150px;
+    max-width: 200px;
+    max-height: 150px;
+}
+
+/* attribute selector */
+[class|="grid"] {
+    border: 5px solid purple;
+}
+
+/* pseudo classes, psueod-class selector */
+a:hover {
+    color: darkgreen;
+}
+
+a:active {
+    color: darkseagreen;
+}
+
+/* layouts, universal selector */
+*.Days {
+    display: flex;
+}
+
+/* id selector */
+#button1 {
+    padding: 5px;
+}
