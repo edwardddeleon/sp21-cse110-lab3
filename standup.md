@@ -1,0 +1,4 @@
+- What issues or projects are you working on?
+- What do you plan to work on?
+- Do you need any help?
+- Would you like to vent? :)
